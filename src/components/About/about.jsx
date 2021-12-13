@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../context';
 import './about.css';
 
-const about = () => {
+const About = () => {
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
-        <div className='a'>
+        <div className='a' style={{backgroundColor: darkMode && "#1a1a1a"}}>
             <div className="a-left">
                 <div className="a-card-bg"></div>
                 <div className="a-card">
@@ -20,9 +25,9 @@ const about = () => {
                 <p className='a-desc'>
                     Undergraduate in BICT(Hons) at University of Sri Jayewardenepura, specializing in Networking. 
                     An experienced Software Developer with hands on e-commerce web development experience in 
-                    React.js on Node.js platform and Wordpress platform. Also an experienced Analytics & 
-                    Content Writer with a demonstrated history of working in the digital marketing and advertising 
-                    industry. Skilled in Python (Programming Language), C programming, Responsive Web Design with 
+                    React.js on Node.js platform and Wordpress platform.
+                    <br /><br />
+                    Skilled in Python (Programming Language), C programming, Responsive Web Design with 
                     React JS with API's / Wordpress with PHP, Linux scripting, MS Azure deployments, Adobe Softwares 
                     and Creative Problem Solving. A fast learner with the ability to work with any team to achieve a target.
                 </p>
@@ -32,4 +37,4 @@ const about = () => {
     )
 }
 
-export default about
+export default About
