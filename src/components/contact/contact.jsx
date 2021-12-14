@@ -3,9 +3,10 @@ import './contact.css';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
 import Addr from '../../img/address.png';
-import { useRef , useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { ThemeContext } from '../../context';
+
 
 
 const Contact = () => {
@@ -21,19 +22,19 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text);
                 setDone(true);
-                cancelCourse();
+                formReset();
             }, (error) => {
                 console.log(error.text);
             });
     }
 
-    const cancelCourse = () => { 
+    const formReset = () => {
         document.getElementById("formReset").reset();
-      }
+    }
 
 
     return (
-        <div className='c'>
+        <div className='c' style={{ backgroundColor: darkMode && "#222" }}>
             <div className="c-bg"></div>
             <div className="c-wrapper">
                 <div className="c-left">
@@ -48,6 +49,16 @@ const Contact = () => {
                         <div className="c-info-item">
                             <img src={Addr} alt="" className="c-icon" />No:4/66, Konakalagala, Alawathugoda.
                         </div>
+
+                        <div>
+                        <ul className="social-network social-circle">
+                        <li><a href="https://www.facebook.com/people/Shehan-Somaweera/100009181860205/" className="icoFacebook" title="Facebook" target="_blank" rel="noreferrer"><i className="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/shehan_somaweera/" className="icoInstagram" title="Instagram" target="_blank" rel="noreferrer"><i className="fa fa-instagram" ></i></a></li>
+                        <li><a href="https://lk.linkedin.com/in/shehan-somaweera" className="icoLinkedin" title="Linkedin" target="_blank" rel="noreferrer"><i className="fa fa-linkedin"></i></a></li>
+                        </ul>
+                </div>
+
+
                     </div>
                 </div>
                 <div className="c-right">
@@ -56,10 +67,10 @@ const Contact = () => {
                         Let's get in touch.
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit} id='formReset'>
-                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Name' name='user_name' />
-                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Subject' name='user_subject' />
-                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Email' name='user_email' />
-                        <textarea style={{backgroundColor: darkMode && "#333"}} rows='5' placeholder='Message' name='message' />
+                        <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder='Name' name='user_name' />
+                        <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder='Subject' name='user_subject' />
+                        <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder='Email' name='user_email' />
+                        <textarea style={{ backgroundColor: darkMode && "#333" }} rows='5' placeholder='Message' name='message' />
                         <button type='submit'>Submit</button>
                         {done && (
                             <div className='c-form-success'>
@@ -67,7 +78,9 @@ const Contact = () => {
                             </div>
                         )}
                     </form>
+
                 </div>
+
             </div>
         </div>
     )

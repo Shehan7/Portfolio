@@ -19,14 +19,15 @@ const Intro = () => {
     }, [])
 
     return (
-        <div className='i'>
+        <div className='i' id='intro'>
             <div className='i-left'>
                 <div className='i-left-wrapper'>
                     <h2 className='i-intro'>Hello there, I am</h2>
                     <h1 className='i-name'>Shehan Somaweera</h1>
                     <div className='i-title'>
                         <div className='i-title-wraper'>
-                            <div className='i-title-item'><span ref={textRef}></span></div>
+                            <div className='i-title-item'><span ref={textRef}></span>
+                            </div>
                             {/* <div className='i-title-item'>Software Developer</div>
                             <div className='i-title-item'>DevOps</div> */}
                         </div>

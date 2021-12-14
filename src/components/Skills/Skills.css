@@ -43,8 +43,6 @@
 
 .skills {
   text-align: right; /* Right-align text */
-  padding-top: 1px; /* Add top padding */
-  padding-bottom: 1px; /* Add bottom padding */
   color: white; /* White text color */
 }
 
@@ -54,11 +52,11 @@
 .web {width: 80%; background-color: #2da2c5;} 
 .linux {width: 40%; background-color: #2da2c5;} 
 
-.time {width: 90%; background-color: #2da2c5;} 
-.fl {width: 95%; background-color: #2da2c5;} 
-.creative {width: 95%; background-color: #2da2c5;} 
-.team {width: 95%; background-color: #2da2c5;} 
-.lead {width: 85%; background-color: #2da2c5;} 
+.time {width: 90%; background-color: #0598c5;} 
+.fl {width: 95%; background-color: #0598c5;} 
+.creative {width: 95%; background-color: #0598c5;} 
+.team {width: 95%; background-color: #0598c5;} 
+.lead {width: 85%; background-color: #0598c5;} 
 
 
 @media screen and (max-width: 480px) {
@@ -75,4 +73,12 @@
         font-size: 16px;
     }
     
+    .s-left p , .s-right p{
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .skills{
+        font-size: 12px;
+    }
 }
