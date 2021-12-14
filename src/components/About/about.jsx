@@ -8,7 +8,7 @@ const About = () => {
     const darkMode = theme.state.darkMode;
 
     return (
-        <div className='a' style={{backgroundColor: darkMode && "#1a1a1a"}}>
+        <div className='a' style={{backgroundColor: darkMode && "#222"}}>
             <div className="a-left">
                 <div className="a-card-bg"></div>
                 <div className="a-card">
@@ -27,8 +27,8 @@ const About = () => {
                     An experienced Software Developer with hands on e-commerce web development experience in 
                     React.js on Node.js platform and Wordpress platform.
                     <br /><br />
-                    Skilled in Python (Programming Language), C programming, Responsive Web Design with 
-                    React JS with API's / Wordpress with PHP, Linux scripting, MS Azure deployments, Adobe Softwares 
+                    Skilled in  Responsive Web Design with React JS with API's / Wordpress with PHP including 
+                    e-commerce web development, Linux scripting, MS Azure and Netlify deployments, Adobe Softwares 
                     and Creative Problem Solving. A fast learner with the ability to work with any team to achieve a target.
                 </p>
 

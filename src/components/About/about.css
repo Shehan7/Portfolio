@@ -61,6 +61,7 @@
         flex-direction: column;
         text-align: center;
         margin-top: 30vh;
+        background-color: transparent;
     }
 
     .a-left{
@@ -71,6 +72,7 @@
         height: 50vh;
         box-shadow: none;
         position: inherit;
+        border-radius: inherit;
     }
 
     .a-right{

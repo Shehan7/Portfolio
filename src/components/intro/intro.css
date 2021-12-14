@@ -41,16 +41,6 @@
     animation: move 5s ease-in-out infinite alternate;
 }
 
-@keyframes move {
-    
-    50% {
-        transform: translateY(-100px);
-    }
-    
-    100% {
-        transform: translateY(-200px);
-    }
-}
 
 .i-title-item{
     height: 50px;
@@ -143,6 +133,10 @@
     .i-left , .i-right {
         display: inherit;
         position: inherit;
+    }
+
+    .i-scroll{
+        display: none;
     }
 
     .i-img{
