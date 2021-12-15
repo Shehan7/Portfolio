@@ -24,14 +24,14 @@ const Skills = () => {
                         <div class="skills git">75%</div>
                     </div>
 
-                    <p>Server Toubleshooting (Migration,SSL...etc.)</p>
-                    <div class="s-container">
-                        <div class="skills server">70%</div>
-                    </div>
-
                     <p>Web Development (React.js | WordPress)</p>
                     <div class="s-container">
                         <div class="skills web">80%</div>
+                    </div>
+                    
+                    <p>Server Toubleshooting (Migration,SSL...etc.)</p>
+                    <div class="s-container">
+                        <div class="skills server">70%</div>
                     </div>
 
                     <p>Linux (Scripting, Using tools...etc.)</p>

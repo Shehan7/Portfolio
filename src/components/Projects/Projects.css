@@ -42,8 +42,8 @@
     transition: 0.3s;
     margin: 10%;
     background-color: white;
-    min-height: 45vh;
-    border-radius: 7px;
+    min-height: 40vh;
+    
     font-size: 20px;
     text-align: center;
 }
@@ -54,7 +54,7 @@
     box-shadow: 0 10px 18px 0 rgba(0, 0, 80, 0.2);
     margin: 8%;
     font-size: 21px;
-    min-height: 47vh;
+    min-height: 42vh;
     cursor: pointer;
 }
 
@@ -67,11 +67,15 @@
 .pr-popup{
     position: fixed;
     top: 10%;
-    left: 20%;
-    background-color: rgb(202, 202, 202);
+    left: 15%;
+    background-color: #f6fdff;
     height: 80%;
     width: 70%;
     display: flex;
+    -webkit-box-shadow: 5px 5px 15px 100% rgba(0,0,0,0.7); 
+    box-shadow: 5px 5px 15px 500px rgba(0,0,0,0.7);
+    border: 1px solid #000080;
+    border-radius: 10px;
 }
 
 .pr-pop-img{
@@ -116,6 +120,10 @@
     
     margin: -25px 0 0 -25px;
 } */
+
+
+
+
 
 @media screen and (max-width: 480px) {
     .pr{

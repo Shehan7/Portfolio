@@ -5,7 +5,7 @@ import IMG1 from '../../img/th1.jpg';
 import IMG2 from '../../img/th2.jpg';
 
 import IMG4 from '../../img/lak1.jpg';
-import IMG5 from '../../img/lak2.jpg';
+//import IMG5 from '../../img/lak2.jpg';
 import IMG6 from '../../img/sample.png';
 import IMG7 from '../../img/th3.jpg';
 import IMG8 from '../../img/dash1.jpg';
@@ -25,20 +25,20 @@ const Projects = () => {
         <div className='pr' style={{ backgroundColor: darkMode && "#222", color: darkMode && "white" }}>
             <h1 className='pr-title'>Projects</h1>
             <h3 className='s-sub'>Here are few of my projects; with the details. Feel free to explore.</h3>
-            <div className="pr-main" style={{ color: darkMode && "black" }}>
+            <div className="pr-main" >
                 <div className="pr-left">
                     <Popup trigger={
-                        <div class="pr-card">
+                        <div className="pr-card" style={{ backgroundColor: darkMode && "#444" }}>
                             <img src={IMG1} alt="Avatar" style={{ width: '100%' }} />
                             <div class="pr-container">
                                 <h4><b>Laknipayum</b></h4>
 
                             </div>
                         </div>} position="center">
-                        <div className='pr-popup'>
+                        <div className='pr-popup' >
                             <div className='pr-pop-img'>
                                 <img src={IMG4} alt='leos' className='pr-pop-img-in' />
-                                <img src={IMG5} alt='leos' className='pr-pop-img-in' />
+                                
                             </div>
                             <div className="pr-pop-text">
                                 <div className='pr-pop-text-in'>
@@ -46,7 +46,11 @@ const Projects = () => {
                                     <p>
                                         Laknipayum is an online store which promotes Sri Lankan eco-friendly hand crafts.
                                         Their effort is to make Sri Lankan eco-friendly hand crafts affordable while improving
-                                        the livelihood of the local designers. <br /><br />
+                                        the livelihood of the local designers. 
+                                        <br />
+                                        The website is fully responsive and provides functional service as an e-commerce website
+                                        
+                                        <br /><br />
 
                                         <a href='https://www.laknipayum.com' target="_blank" rel="noreferrer">www.laknipayum.com </a><br />
                                         <b>CMS &emsp; : WordPress Platform </b>
@@ -59,9 +63,9 @@ const Projects = () => {
                 </div>
                 <div className="pr-mid">
                     <Popup trigger={
-                        <div class="pr-card">
+                        <div className="pr-card" style={{ backgroundColor: darkMode && "#444" }}>
                             <img src={IMG2} alt="Avatar" style={{ width: '100%' }} />
-                            <div class="pr-container">
+                            <div className="pr-container">
                                 <h4><b>Sample Project</b></h4>
 
                             </div>
@@ -90,9 +94,9 @@ const Projects = () => {
                 </div>
                 <div className="pr-right">
                     <Popup trigger={
-                        <div class="pr-card">
+                        <div className="pr-card" style={{ backgroundColor: darkMode && "#444" }}>
                             <img src={IMG7} alt="Avatar" style={{ width: '100%' }} />
-                            <div class="pr-container">
+                            <div className="pr-container">
                                 <h4><b>Dashboard Projects</b></h4>
 
                             </div>
@@ -112,7 +116,7 @@ const Projects = () => {
                                         dashboard tasks of two projects, called CCC Foundation and ARGO. <br /><br />
 
 
-                                        <b>CMS &emsp; : React.js on Netlify platform </b>
+                                        <b>CMS &emsp; : Amazon Web Services (AWS) </b>
                                     </p>
 
                                 </div>
@@ -122,9 +126,9 @@ const Projects = () => {
                 </div>
                 <div className="pr-right-next">
                     <Popup trigger={
-                        <div class="pr-card">
+                        <div className="pr-card" style={{ backgroundColor: darkMode && "#444" }}>
                             <img src={IMG11} alt="Avatar" style={{ width: '100%' }} />
-                            <div class="pr-container">
+                            <div className="pr-container">
                                 <h4><b>My Web-CV / Portfolio</b></h4>
 
                             </div>
@@ -139,8 +143,12 @@ const Projects = () => {
                                     <h2>My Portfolio Project</h2>
                                     <p>
                                         I developed this portfolio using React.js, with functional components. There is the 
-                                        "Dark Mode" created using useContext hook and the contact form is developed with 
-                                        Email JS. <br /><br />
+                                        "Dark Mode" created using context API's and the contact form is developed with 
+                                        Email JS
+                                        <br />
+                                        These popups are developed with react-popups and custom made styles. You can exit the 
+                                        popup by clicking the outbound area.
+                                        <br /><br />
 
 
                                         <b>CMS &emsp; : React.js on Netlify platform </b>

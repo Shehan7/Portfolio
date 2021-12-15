@@ -51,27 +51,27 @@ const Contact = () => {
                         </div>
 
                         <div>
-                        <ul className="social-network social-circle">
-                        <li><a href="https://www.facebook.com/people/Shehan-Somaweera/100009181860205/" className="icoFacebook" title="Facebook" target="_blank" rel="noreferrer"><i className="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/shehan_somaweera/" className="icoInstagram" title="Instagram" target="_blank" rel="noreferrer"><i className="fa fa-instagram" ></i></a></li>
-                        <li><a href="https://lk.linkedin.com/in/shehan-somaweera" className="icoLinkedin" title="Linkedin" target="_blank" rel="noreferrer"><i className="fa fa-linkedin"></i></a></li>
-                        </ul>
-                </div>
+                            <ul className="social-network social-circle">
+                                <li><a href="https://www.facebook.com/people/Shehan-Somaweera/100009181860205/" className="icoFacebook" title="Facebook" target="_blank" rel="noreferrer"><i className="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/shehan_somaweera/" className="icoInstagram" title="Instagram" target="_blank" rel="noreferrer"><i className="fa fa-instagram" ></i></a></li>
+                                <li><a href="https://lk.linkedin.com/in/shehan-somaweera" className="icoLinkedin" title="Linkedin" target="_blank" rel="noreferrer"><i className="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
 
 
                     </div>
                 </div>
                 <div className="c-right">
                     <p className='c-desc'>
-                        <b>Hi there, do you need any assistance or contact me?</b> Just fill the form below and send a message.
+                        <b>Hi there, do you need any assistance or to contact me?</b> Just fill the form below and send a message.
                         Let's get in touch.
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit} id='formReset'>
-                        <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder='Name' name='user_name' />
-                        <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder='Subject' name='user_subject' />
-                        <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder='Email' name='user_email' />
-                        <textarea style={{ backgroundColor: darkMode && "#333" }} rows='5' placeholder='Message' name='message' />
-                        <button type='submit'>Submit</button>
+                        <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder='Name' name='user_name' required />
+                        <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder='Subject' name='user_subject' required/>
+                        <input style={{ backgroundColor: darkMode && "#333" }} type="email" placeholder='Email' name='user_email' required />
+                        <textarea style={{ backgroundColor: darkMode && "#333" }} rows='5' placeholder='Message' name='message' required/>
+                        <button type='submit'>Send</button>
                         {done && (
                             <div className='c-form-success'>
                                 <h3>Thank you! I'll get back to you soon...</h3>

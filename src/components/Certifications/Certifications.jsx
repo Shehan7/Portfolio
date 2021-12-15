@@ -16,11 +16,11 @@ const Certifications = () => {
             <h1 className='ce-title'>Certifications</h1>
             <h3 className='s-sub'>I have done several interesting certifications and some of them are mentioned below.
             Visit my <a className='ce-a' target="_blank" rel="noreferrer" href="https://lk.linkedin.com/in/shehan-somaweera">LinkedIn Profile</a> to see all certifications.</h3>
-            <div className="ce-main" style={{ color: darkMode && "black" }}>
+            <div className="ce-main" >
                 <div className="ce-left">   
-                    <div class="card">
+                    <div className="card" style={{ backgroundColor: darkMode && "#444" }}>
                         <img src={IMG1} alt="Avatar" style={{ width: '100%' }} />
-                        <div class="container">
+                        <div className="container">
                             <h4><b>The Complete Cyber Security Course :
                                 Hackers Exposed</b></h4>
                             <p>Certificate by Nathan House in StationX, on
@@ -29,9 +29,9 @@ const Certifications = () => {
                     </div>
                 </div>
                 <div className="ce-mid">
-                    <div class="card">
+                    <div className="card" style={{ backgroundColor: darkMode && "#444" }}>
                         <img src={IMG2} alt="Avatar" style={{ width: '100%' }} />
-                        <div class="container">
+                        <div className="container">
                             <h4><b>NDG Linux Unhatched</b></h4>
                             <p>Certificate from Cisco
                                 Networking Academy</p>
@@ -39,9 +39,9 @@ const Certifications = () => {
                     </div>
                 </div>
                 <div className="ce-right">
-                    <div class="card">
+                    <div className="card" style={{ backgroundColor: darkMode && "#444" }}>
                         <img src={IMG3} alt="Avatar" style={{ width: '100%' }} />
-                        <div class="container">
+                        <div className="container">
                             <h4><b>Technical Support Fundamentals</b></h4>
                             <p>Certificate from Google on Coursera online academy.</p>
                         </div>
