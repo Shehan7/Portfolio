@@ -1,3 +1,13 @@
+# This is the official portfolio of mine (Ushira Somaweera)
+The project developed using React.js along with helpful npm modules.
+
+You can access my portfolio using below links. Feel free to explore!
+
+https://ushira.me
+
+https://ushira.netlify.app
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
