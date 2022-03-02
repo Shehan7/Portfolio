@@ -1,0 +1,147 @@
+.pr{
+    height: 100vh;
+    position: relative;
+}
+.pr-main{
+    display: flex;
+}
+
+.pr-left{
+    flex: 1;
+}
+
+.pr-mid{
+    flex: 1;
+}
+
+.pr-right{
+    flex: 1;
+}
+.pr-right-next{
+    flex: 1;
+}
+
+.pr-title{
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 600;
+}
+
+.pr-a{
+    /* text-decoration: none; */
+    color: #2da2c5;
+}
+
+.pr-a:hover{
+    color: #46d1fc;
+}
+
+.pr-card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10%;
+    background-color: white;
+    min-height: 40vh;
+    
+    font-size: 20px;
+    text-align: center;
+}
+  
+
+/* On mouse-over, add a deeper shadow */
+.pr-card:hover {
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 80, 0.2);
+    margin: 8%;
+    font-size: 21px;
+    min-height: 42vh;
+    cursor: pointer;
+}
+
+
+/* Add some padding inside the card container */
+.pr-container {
+    padding: 2px 16px;
+}
+
+.pr-popup{
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    background-color: #f6fdff;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    -webkit-box-shadow: 5px 5px 15px 100% rgba(0,0,0,0.7); 
+    box-shadow: 5px 5px 15px 500px rgba(0,0,0,0.7);
+    border: 1px solid #000080;
+    border-radius: 10px;
+}
+
+.pr-pop-img{
+    flex: 1;
+}
+
+.pr-pop-img-in{
+    height: auto;
+    width: 100%;
+    align-content: center;
+    margin: 15px 5px;
+}
+
+.pr-pop-text{
+    flex: 2;
+    margin-left: 2%;
+}
+.pr-pop-text-in h2{
+    margin-top: 5%;
+}
+.pr-pop-text-in a{
+    text-decoration: none;
+}
+.pr-pop-text-in p{
+    
+    text-align: justify;
+    margin: 5%;
+}
+
+.CV-area button{
+    width: 20%;
+    font-size: 18px;
+}
+
+
+/*
+.pr-pop-inner{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    position: absolute;
+    
+    margin: -25px 0 0 -25px;
+} */
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .pr{
+        margin-top: 160vh;
+    }
+    
+    .pr-main{
+        flex-direction: column;
+    }
+
+    .pr-popup{
+        display: none;
+    }
+    .pr-card:hover{
+        cursor: none;
+    }
+    .CV-area button{
+        width: 50%;
+        font-size: 18px;
+    }
+}

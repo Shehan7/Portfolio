@@ -1,0 +1,84 @@
+.s-main{
+    height: 100vh;
+}
+
+.s{
+    display: flex;
+}
+
+.s-left{
+    flex: 1;
+    margin: 2%;
+}
+
+.s-right{
+    flex: 1;
+    margin: 2%;
+}
+
+.s-title{
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 600;
+}
+
+.s-sub{
+    text-align: center;
+    font-weight: 400;
+}
+
+.s-subtitle{
+    font-weight: 300;
+}
+
+/* Make sure that padding behaves as expected */
+/* * {box-sizing:border-box} */
+
+/* Container for skill bars */
+.s-container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  margin-bottom: 10px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  color: white; /* White text color */
+}
+
+.cloud {width: 60%; background-color: #2da2c5;}
+.git {width: 75%; background-color: #2da2c5;}
+.server {width: 70%; background-color: #2da2c5;} 
+.web {width: 80%; background-color: #2da2c5;} 
+.linux {width: 40%; background-color: #2da2c5;} 
+
+.time {width: 90%; background-color: #0598c5;} 
+.fl {width: 95%; background-color: #0598c5;} 
+.creative {width: 95%; background-color: #0598c5;} 
+.team {width: 95%; background-color: #0598c5;} 
+.lead {width: 85%; background-color: #0598c5;} 
+
+
+@media screen and (max-width: 480px) {
+    .s-main{
+        margin-top: 55vh;
+    }
+
+    .s{
+        flex-direction: column;
+    }
+
+    .s-sub{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    
+    .s-left p , .s-right p{
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .skills{
+        font-size: 12px;
+    }
+}

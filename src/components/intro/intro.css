@@ -1,0 +1,169 @@
+.i {
+    display: flex;
+    height: 100vh;
+}
+
+.i-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-left-wrapper{
+    padding: 50px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.i-intro{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.i-name{
+    font-size: 50px;
+}
+
+.i-title{
+    height: 50px;
+    overflow: hidden;
+}
+
+.i-title-wrapper{
+    height: 100%;
+    animation: move 5s ease-in-out infinite alternate;
+}
+
+
+.i-title-item{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2da2c5;
+    display: flex;
+    align-items: center;
+}
+
+.i-right-div{
+    background: linear-gradient(135deg, rgb(65, 195, 255) 0%, rgb(45, 162, 197) 51%, rgb(0, 0, 80) 51%, rgb(0, 0, 141) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.i-img{
+    /* width: auto;
+    height: 100%;
+    object-fit: cover; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    /* background-color: #4696ff; */
+    
+}
+
+/* .i-bg{
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: #5757ff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+.i-scroll{
+    color: black;
+    position: absolute;
+    bottom: 20px;
+}
+
+.i-desc{
+    text-align: justify;
+}
+
+
+
+.ityped-cursor {
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 1;
+    /* -webkit-animation: blink 0.6s infinite;
+    -moz-animation: blink 0.6s infinite; */
+    animation: blink 0.6s infinite;
+    animation-direction: alternate;
+}
+ 
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+ 
+/* @-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+} */
+
+
+
+@media screen and (max-width: 480px) {
+    .i{
+        flex-direction: column;
+
+    }
+    
+    .i-left , .i-right {
+        display: inherit;
+        position: inherit;
+    }
+
+    .i-scroll{
+        display: none;
+    }
+
+    .i-img{
+        display: inherit;
+        margin: inherit;
+        height: 400px;
+    }
+
+    .i-left-wrapper{
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .i-desc{
+        display: none;
+    }
+    .i-title-item{
+        font-size: 20px;
+    }
+
+    .i-right-div{
+        height: initial;
+    }
+    .ityped-cursor{
+        font-size: 1rem;
+    }
+}
