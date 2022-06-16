@@ -33,7 +33,7 @@ const Intro = () => {
                         </div>
                     </div>
                     <p className='i-desc'>
-                        I'm an undergraduate at University of Sri Jayawardenepura, on BICT(Hons) specializing in
+                        I'm a fresh graduate at University of Sri Jayawardenepura, on BICT(Hons) specializing in
                         Network Technology. I like to seek challenging opportunities to use my skills and improve them.
                     </p>
                 </div>

@@ -43,7 +43,7 @@ const Skills = () => {
                 </div>
                 <div className="s-right">
 
-                    <h3 className='s-subtitle'>PERSONAL SKILLS</h3>
+                    <h3 className='s-subtitle'>SOFT SKILLS</h3>
                     
                     <p>Time Management</p>
                     <div class="s-container">
