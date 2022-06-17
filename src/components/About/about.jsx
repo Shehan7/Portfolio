@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../context';
 import './about.css';
-import IMG1 from '../../img/wel.gif';
+//import IMG1 from '../../img/wel.gif';
 
 
 const About = () => {
@@ -15,10 +15,10 @@ const About = () => {
                 <div className="a-card-bg"></div>
                 <div className="a-card">
                     {/* <img src="http://cdn.shopify.com/s/files/1/0577/3420/1549/products/NK0260_welcome.jpg" alt="" className="a-img" /> */}
-                    <img src={IMG1} alt="" />
+                    {/* <img src={IMG1} alt="" /> */}
                     
                     
-                    {/* <iframe className='a-img' src="https://ntmaker.gfto.ru/newneontexten/?image_height=600&image_width=400&image_font_shadow_width=30&image_font_size=80&image_background_color=1F1F1F&image_text_color=FF91A9&image_font_shadow_color=F7406B&image_url=&image_text=About Me&image_font_family=Nickainley&" frameborder='no' scrolling='no' width="400" height="600" title='about me'></iframe> */}
+                    <iframe className='a-img' src="https://ntmaker.gfto.ru/newneontexten/?image_height=600&image_width=400&image_font_shadow_width=30&image_font_size=80&image_background_color=1F1F1F&image_text_color=FF91A9&image_font_shadow_color=F7406B&image_url=&image_text=Welcome!&image_font_family=Nickainley&" frameborder='no' scrolling='no' width="400" height="600" title='about me'></iframe>
                     
                 
                 </div>
